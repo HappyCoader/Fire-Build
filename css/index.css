@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+* {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+  border: none;
+list-style: none;
+  transition: all .2s linear;
+}
+
+
+html::-webkit-scrollbar{
+  width:0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:rgb(255, 255, 255);
+}
+
+html::-webkit-scrollbar-thumb{
+
+  background:rgb(0, 26, 255);
+  border-radius: 20rem;
+}
+
+
+
+nav{
+    width: 100%;
+
+
+ border-bottom: 0.5px solid black;
+ height: 6rem;
+ 
+}
+.img{
+   width: 30rem;
+   height: 30rem;
+ 
+}
+html{
+    font-size: 1rem;
+}
+ul{
+    display: flex;
+    justify-content: end;
+}
+li {
+    margin: 1rem 0rem;
+    margin-right: 2rem;
+}
+li a{
+   color: rgb(0, 0, 0);
+   font-size: 1.5rem;
+
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+li a:hover,.active{
+    text-decoration: underline;
+    color: rgb(35, 35, 245);
+}
+.firebuild{
+    font-size: 2.5rem;
+   
+    color: #000000;
+    margin: 1rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 4rem;
+}
+.special-heading {
+    font-size: 14px;
+    line-height: 21px;
+    color: #303030;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    }
+    .special-text {
+    color: #606060;
+    }
+    .skills, .skill-details {
+    padding: 15px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 40px;
+    padding-left: 0;
+    }
+    .skill-details {
+    float:right;
+    padding-left: 40px;
+    padding-right: 0;
+    }
+    .skills dt:after {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 0.5rem;
+    content: "";
+    display: block;
+    }
+    .skills dd {
+    background: red;
+    width: 100%;
+    height: 0.5rem;
+    position: relative;
+    top: -0.5rem;
+    }
+    .skills dd.html {
+        width: 99%;
+    background: #F44336;
+    }
+    .skills dd.css {
+        width: 86%;
+    background: #2196F3;
+    }
+    .skills dd.jquery {
+        width: 90%;
+    background: #FFCA28;
+    }
+    .skills dd.scss {
+        width: 80%;
+    background: #F06292;
+    }
+    .skills dd.javascript {
+        width: 91%;
+    background: #FFA000;
+    }
+    .skills dd.react {
+        width: 82%;
+        background: #000000;
+        }
+    .skills dd.php {
+        width: 89%;
+    background: #303F9F;
+    }
+    .skills dd.xml {
+        width: 100%;
+    background: #27ae60;
+    }
+#check{
+    display: none;
+}
+.special-title {
+    text-align: center;
+    margin-bottom: 35px;
+    }
+    .special-title h4 {
+    font-size: 35px;
+    line-height: 45px;
+    color:#303030;
+    text-transform:capitalize;
+    }
+.menu{
+    display: none;
+z-index: 99999;
+    color: rgb(0, 0, 0);
+}
+.menumain{
+    z-index: 1;
+    padding: 0.2rem 1rem;
+    border: 0.2px solid black;
+    text-shadow: 0rem 0.1rem 0.2rem black;
+}
+.head{
+    margin-top: 10rem;
+    font-size: 4rem;
+    margin-left: 3rem;
+}
+.btn,.btn2:hover{
+    padding: 0.5rem 2rem;
+    color: rgb(35, 35, 245);
+    font-size: 1.2rem;
+    background-color: white;
+    border: 1px solid rgb(35, 35, 245);
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: all 0.3s;
+}
+.btn:hover,.btn2{
+    background:rgb(35, 35, 245);
+    color: white;
+    border: white;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width:950px){
+    html{
+        font-size: 0.8rem;
+    }
+    ul{
+        width: 50%;
+        height: max-content;
+        flex-direction: column;
+       margin-top: 6rem;
+        text-align: center;
+background-color: white;
+     position: absolute;
+     top: 0;
+    left: -100%;
+transition: all 0.5s;
+border: 1px solid black;
+      z-index: 9999;
+    }
+  
+  
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+    section{
+        flex-direction: column;
+    }
+ 
+
+    .menu{
+       
+    display: block;
+        color: rgb(0, 0, 0);
+        float: right;
+        padding: 1rem 3rem;
+    }
+
+
+    #check:checked~ul{
+    left: 0;
+    }
+
+}
+@media screen and (max-width:300px) {
+    html{
+    font-size: 0.6rem;
+    }
+    
+}
