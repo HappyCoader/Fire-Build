@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Build Earn money</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="img/jpg" href="image/LOGO.png"/>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+*{
+    padding: 0;margin: 0;box-sizing: border-box; overflow-x: hidden; list-style: none;
+}
+body{background-color: rgb(245, 251, 255);}
+html::-webkit-scrollbar{
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:rgb(0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb{
+
+  background:rgb(0, 26, 255);
+  border-radius: 20rem;
+}
+
+#check{
+    display: none;
+}
+.menu{
+    display: none;
+z-index: 99999;
+    color: rgb(0, 0, 0);
+}
+.menumain{
+    z-index: 1;
+    padding: 0.2rem 1rem;
+    border: 0.2px solid black;
+    text-shadow: 0rem 0.1rem 0.2rem black;
+}
+nav{
+    width: 100%;
+
+
+ border-bottom: 0.5px solid black;
+ height: 6rem;
+ 
+}
+.img{
+   width: 30rem;
+   height: 30rem;
+ 
+}
+html{
+    font-size: 1rem;
+}
+ul{
+    display: flex;
+    justify-content: end;
+}
+li {
+    margin: 1rem 0rem;
+    margin-right: 2rem;
+}
+li a{
+   color: rgb(0, 0, 0);
+   font-size: 1.5rem;
+
+}
+li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.box{
+    color: white;
+}
+.firebuild{
+    font-size: 2.5rem;
+   
+    color: #000000;
+    margin: 1rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 4rem;
+}
+.container{
+    background-color: blue;
+    width: 80%;
+    height: max-content;
+    border-radius: 5rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.box{
+    margin-right: 5rem;
+    padding: 2rem;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+.box:hover{
+background-color: white;
+color: black;
+}
+input,select{
+    width: 20rem;
+    height: 3rem;
+     border: 1px solid white;
+     border-radius: 3rem;
+     font-size: 1.3rem;
+}
+#Whatsapp{
+    width: 2rem;
+    height: 1rem;
+}
+textarea{
+    width: 100%;
+    height: 10rem;
+     border: 1px solid rgb(255, 255, 255);
+    border-radius: 0rem 1rem 1rem 1rem;
+    font-size: 1.3rem;
+}
+#submit{
+    padding: 0.5rem 7rem;
+    font-size: 1.2rem;
+    color: rgb(19, 2, 255);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 3rem 
+    ;
+
+}
+#submit:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 4, 255);
+}
+@media screen and (max-width:950px) {
+    .container{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    input,select{
+    width: 100%;
+    height: 3rem;
+     border: 1px solid white;
+     border-radius: 3rem;
+     font-size: 1.3rem;
+}
+    .box{
+        margin-right: 0;
+padding: 1rem;
+margin-bottom: 5rem;
+    }
+    textarea{
+    width: 100%;
+    height: 10rem;
+     border: 1px solid rgb(255, 255, 255);
+    border-radius: 0rem 1rem 1rem 1rem;
+    font-size: 1.3rem;
+}
+
+    ul{
+        width: 50%;
+        height: max-content;
+        flex-direction: column;
+       margin-top: 6rem;
+        text-align: center;
+background-color: white;
+     position: absolute;
+     top: 0;
+    left: -100%;
+transition: all 0.5s;
+border: 1px solid black;
+      z-index: 9999;
+    }
+    .container{
+        width: 100%;
+        text-align: center;
+    }
+    .box{
+        font-weight: bold;
+        height: max-content;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 2rem;
+ }
+ .menu{
+       
+       display: block;
+           color: rgb(0, 0, 0);
+           float: right;
+           padding: 1rem 3rem;
+       }
+   
+   
+       #check:checked~ul{
+       left: 0;
+       }
+   
+   
+}
+@media screen and (max-width:400px) {
+    html{
+    font-size: 0.6rem;
+    }
+    
+}
+</style>
+<body>
+    <nav >
+        <h1 class="firebuild">Fire Build |</h1>
+        <input type="checkbox"  id="check">
+        <label for="check" class="menu">
+            <i class="fa-solid fa-bars fa-2x menumain"></i>
+        </label>
+        
+        <ul>
+            
+            <li><a href="index.html" class="active">Home </a></li>
+            <li><a href="index.html">About us </a></li>
+           <li><a href="index.html" >Services</a></li>
+             <li><a href="index.html">Blog</a></li>
+             <li><a href="index.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+ <br><br><br><br><br>
+    <center>
+        <h1>
+            Earn Money
+        </h1>  
+        <h2 >If You Have a Any  skills than You Can Apply This Job</h2>
+        </center>
+    <br><br><br><br>
+        <div class="contact">
+        
+          <div class="container">
+            <div class="box">
+             <div >
+              <h2>Note</h2>
+              <p>
+                 We found Expirenced Animator <br> ,App Developer, UI Designer, <br> Content Writer,App Designer, <br> Illustrator Expert,SEO Expert, <br> Technical Writer,Etical Hacker, <br> Character Modeling,And Web Programer <br> For Our Company.
+              </p>
+           
+          <h2>Step 1</h2>
+          <p>
+              FILL the Form*
+          </p>
+    <h2>Step 2</h2>
+    <p>
+        We Check Your Expirence <br> and If Your Details <br> Approved than We will <br> contact you On Whatsapp 
+    </p>
+    <h2>
+    Note
+    </h2>
+    <p>
+    School Students <br> Can Work With us 
+    </p>
+              <li><i class='lnr lnr-envelope'></i>firebuild928@gmail.com</li>
+             
+            </div>
+          </div>
+     
+        
+          <div class="form">
+              <form action="">
+            <input type="text" required  id="name" placeholder="Name*">
+            <br><br><br>
+            <select  id="skills" required >
+                <option value="">Choose any skills</option>
+                <option value="fullstack developer">Full Stack Developer</option>
+                <option value="Backend Developer">Backend developer</option>
+                <option value="Front end Developer">Front end Developer</option>
+                <option value="Android Developer">Android Developer</option>
+                <option value="Content Writer">Content Writer</option>
+                <option value="Ui Designer">Ui Designer</option>
+                <option value="App Developer">App Designer</option>
+                <option value="Resume Writer">Resume Writer</option>
+                <option value="Web Content Writer">Web Content Writer</option>
+                <option value="Web Banner Designer">Web Banner Designer</option>
+                <option value="Illustrator">Illustrator</option>
+                <option value="PhotoShop Editing">PhotoShop Editing</option>
+                <option value="Web Content Writer">Web Content Writer</option>
+                <option value="Web Banner Designer">Web Banner Designer</option>
+                <option value="Ux Designer">Ux Designer</option>
+                <option value="Video Editor">Video Editor</option>
+                <option value="Animator">Animator</option>
+                <option value="Data Entry">Data Entry</option>
+                <option value="Menu Designer">Menu Designer</option>
+                <option value="Web Designer">Web Designer</option>
+                <option value="Web Landing page Designer">Web Landing page Designer</option>
+                <option value="Technical Writer">Technical Writer</option>
+                <option value="Etical Hacker">Etical Hacker</option>
+                <option value="Website Tester">Website Tester</option>
+                <option value="Logo Maker">Logo Maker</option>
+                <option value="Game Developer">Game Developer</option>
+                <option value="3D gAME Developer">3d Game Developer</option>
+                <option value="wEB Programer">Web Programer</option>
+                <option value="Book Editing">Book Editing</option>
+                <option value="Book and Ebook Writer">Book& eBook Writer</option>
+                <option value="Articles & Blog Posts">Articles & Blog Posts</option>
+                <option value="Speech Writer">Speech Writer</option>
+                <option value="Script Writer"> Script Writer</option>
+                <option value="Podcast Writer">Podcast Writer</option>
+                <option value="Legal Writer">Legal Writer</option>
+                <option value="Elearning Content Development">eLearning Content Development</option>
+                <option value="Off-page SEO">Off-page SEO</option>
+                <option value="Technical SEO">Technical Seo</option>
+                <option value="On-Page SEO">On-Page SEO</option>
+                <option value="Full Stack Package">Full SEO Package</option>
+                <option value="Competitor Analysis">Competitor Analysis</option>
+                <option value="Voice Search SEO">Voice Search SEO</option>
+                <option value="Logo Design">Logo Design</option>
+                <option value="Poster Design">Poster Design</option>
+                <option value="Book Design">Book Design</option>
+                <option value="Social Media Designer">Social Media Design</option>
+                <option value="Email Design">Email Design</option>
+                <option value="Character Modeling">Character Modeling</option>
+             <option value="3d Animator">3D Animator</option>
+             <option value="2d Animator">2D Animator</option>
+             </select>
+             <br><br><br>
+            <input type="email" id="email" placeholder="email" required >
+            <br><br><br>
+            <select id="eyears"  required >
+                <option value="">Choose Your Expirence Years</option>
+                <option value="One Year">1 Year</option>
+                <option value="Two years">2 Years</option>
+                <option value="Three years">3 Years</option>
+                <option value="Four Years">4 Years</option>
+                <option value="Five Years">5 Years </option>
+                <option value="Six Years">6 Years</option>
+                <option value="Seven Years">7Years</option>
+                <option value="Eight Years">8 Years</option>
+                <option value="Nine Years">9 Years</option>
+                <option value="10+ Years">10+ Years</option>
+            </select>
+            <br><br><br>
+            <input type="text" required  id="github" placeholder="Your GitHub Account Profile Link">
+            <br><br><br>
+            <input type="number" required  id="phone" placeholder="Phone Number">
+            <br><br><br>
+            
+            <textarea  required  id="WhyFirebuild" cols="30" rows="10" placeholder="Why FireBuild*"></textarea>
+            <br><br><br>
+            <p style="color: white;">  <input type="checkbox" required    id="Whatsapp"> Contact me On Whatsapp</p>
+            <br><br><br>
+            <button id="submit">Submit</button>
+        </form>
+          </div>
+        </div>
+      </div>
+</div>
+</body>
+</html>
